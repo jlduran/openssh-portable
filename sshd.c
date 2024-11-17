@@ -91,7 +91,7 @@
 #include "sk-api.h"
 #include "addr.h"
 #include "srclimit.h"
-#include "blacklist_client.h"
+#include "blocklist_client.h"
 
 /* Re-exec fds */
 #define REEXEC_DEVCRYPTO_RESERVED_FD	(STDERR_FILENO + 1)
@@ -1787,7 +1787,7 @@ main(int ac, char **av)
 
 	fatal("rexec of %s failed: %s", rexec_argv[0], strerror(errno));
 
-	BLACKLIST_INIT();
+	BLOCKLIST_INIT();
 }
 
 /* server specific fatal cleanup */
