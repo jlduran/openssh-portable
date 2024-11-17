@@ -102,6 +102,7 @@ AuthorizedKeysFile	.ssh/authorized_keys
 #MaxStartups 10:30:100
 #PermitTunnel no
 #ChrootDirectory none
+#UseBlacklist no
 #VersionAddendum none
 
 # no default banner path
